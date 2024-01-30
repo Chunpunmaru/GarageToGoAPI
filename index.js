@@ -8,8 +8,8 @@ const app = express ();
 app.use(express.json())
 app.use(cors())
 
-const port = 3000;
-const host = "https://garage-to-go-api.onrender.com";
+const port = process.env.PORT || 3000;
+// const host = "https://garage-to-go-api.onrender.com";
 
 app.post("/payment-sheet", async (req, res, next) => {
     
@@ -55,6 +55,6 @@ app.get("/payment-shit",(req,res,next)=>{
     res.status(200).send("Hello World")
 })
 
-app.listen(port,host,()=>{
+app.listen(port,()=>{
     console.log(`Server is up at ${port}`);
 });
