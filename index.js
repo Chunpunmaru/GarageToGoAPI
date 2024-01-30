@@ -51,7 +51,7 @@ app.post("/payment-sheet", async (req, res, next) => {
     
   });
 
-app.post("/payment-shit",(req,res,next)=>{
+app.get("/payment-shit",(req,res,next)=>{
     res.status(200).send("Hello World")
 })
 
