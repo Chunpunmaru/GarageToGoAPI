@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 const port = 3000;
-const host = "localhost";
+const host = "https://garage-to-go-api.onrender.com";
 
 app.post("/payment-sheet", async (req, res, next) => {
     
